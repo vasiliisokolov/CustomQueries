@@ -24,7 +24,7 @@ public:
 	void putCPR()
 	{
 		std::cout << "Put!" << std::endl;
-		r = cpr::Put(cpr::Url{"http://httpbin.org/put"}, cpr::Payload{{"adressA", "squareA"}});
+		r = cpr::Put(cpr::Url{"http://httpbin.org/put"}, cpr::Payload{{"adress", "squareA"}});
 	}
 
 	void delCPR()
@@ -36,7 +36,7 @@ public:
 	void patchCPR()
 	{
 		std::cout << "Patch!" << std::endl;
-		r = cpr::Patch(cpr::Url{"http://httpbin.org/patch"}, cpr::Payload{{"adressB", "squareB"}});
+		r = cpr::Patch(cpr::Url{"http://httpbin.org/patch"}, cpr::Payload{{"adress", "squareB"}});
 	}
 
 	void out()
@@ -65,7 +65,6 @@ public:
 			break;
 		case 4:
 			delCPR();
-			out();
 			break;
 		case 5:
 			patchCPR();
